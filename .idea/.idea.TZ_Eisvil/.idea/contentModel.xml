@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Public\Repos\!Testovoe\TZ_Eisvil" t="IncludeRecursive">
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Project" t="Include">
+          <e p="Scripts" t="Include">
+            <e p="Game" t="Include">
+              <e p="Enemy" t="Include">
+                <e p="EnemyController.cs" t="Include" />
+                <e p="EnemyGlobalTracker.cs" t="Include" />
+                <e p="EnemyPool.cs" t="Include" />
+                <e p="EnemySpawner.cs" t="Include" />
+                <e p="EnemyType.cs" t="Include" />
+                <e p="IEnemyController.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Temp\Bin" t="ExcludeRecursive" />
+      <e p="TZ_Eisvil.sln" t="IncludeFlat" />
+    </e>
+    <e p="C:\Users\Никита\AppData\Local\JetBrains\Rider2020.3\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Никита\AppData\Local\JetBrains\Rider2020.3\resharper-host\Local\Transient\Rider\v203\SolutionCaches\_TZ_Eisvil.193034525.00" t="ExcludeRecursive" />
+  </component>
+</project>
