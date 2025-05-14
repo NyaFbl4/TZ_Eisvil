@@ -19,7 +19,6 @@ namespace TZ_Eisvil
 
         public void Death()
         {
-            Debug.Log("Death " + gameObject.name);
             OnDeath?.Invoke(this); // Уведомляем подписчиков
             Destroy(gameObject);
         }

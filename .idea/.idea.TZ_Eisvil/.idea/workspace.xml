@@ -12,9 +12,10 @@
       <option value="$PROJECT_DIR$/Assets/Project/Scripts/Game/Enemy/IEnemyController.cs" />
       <option value="$PROJECT_DIR$/Assets/Project/Scripts/Game/Enemy/EnemyType.cs" />
       <option value="$PROJECT_DIR$/Assets/Project/Scripts/Game/Enemy/EnemyPool.cs" />
-      <option value="$PROJECT_DIR$/Assets/Project/Scripts/Game/Enemy/EnemyController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Project/Scripts/Installers/EnemyInstaller.cs" />
       <option value="$PROJECT_DIR$/Assets/Project/Scripts/Game/Enemy/EnemySpawner.cs" />
       <option value="$PROJECT_DIR$/Assets/Project/Scripts/Game/Enemy/EnemyGlobalTracker.cs" />
+      <option value="$PROJECT_DIR$/Assets/Project/Scripts/Game/Enemy/EnemyController.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="2x4rkxsozdCcfEbZNtuYGlv4qqn" />
@@ -37,7 +38,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1747208340236</updated>
-      <workItem from="1747208354314" duration="12535000" />
+      <workItem from="1747208354314" duration="13404000" />
     </task>
     <servers />
   </component>

@@ -4,12 +4,19 @@ using UnityEngine;
 
 namespace TZ_Eisvil
 {
-    public class EnemyGlobalTracker : MonoBehaviour
+    public class EnemyGlobalTracker
     {
-        [SerializeField] private List<EnemyController> _activeEnemyPool = new();
-        private Dictionary<EEnemyType, int> _deathStats = new();
+        private readonly List<EnemyController> _activeEnemyPool = new();
+        private readonly Dictionary<EEnemyType, int> _deathStats = new();
+
+        public EnemyGlobalTracker()
+        {
+            Debug.Log("Create EnemyGlobalTracker");
+        }
 
         public event Action<EnemyController> OnDeathEnemy;
+        
+        
         
         public void RegisterEnemy(EnemyController enemy)
         { 

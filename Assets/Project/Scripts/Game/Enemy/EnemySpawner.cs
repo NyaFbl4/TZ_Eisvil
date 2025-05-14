@@ -1,13 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using UnityEngine;
+using Zenject;
 using Random = UnityEngine.Random;
 
 namespace TZ_Eisvil
 {
     public class EnemySpawner: MonoBehaviour
     {
-        [SerializeField] private EnemyGlobalTracker _globalTracker;
+        private EnemyGlobalTracker _globalTracker;
         [SerializeField] private EnemyPool _enemyPool;
         [SerializeField] private Transform _worldTransform;
         [SerializeField] private List<Color> _colors;
@@ -18,6 +19,12 @@ namespace TZ_Eisvil
 
         private List<IEnemyController> _activeEnemyPool;
 
+        [Inject]
+        public void Construct(EnemyGlobalTracker globalTracker)
+        {
+            _globalTracker = globalTracker;
+        }
+        
         private void Update()
         {
             if (Input.GetKeyDown(KeyCode.Space))
