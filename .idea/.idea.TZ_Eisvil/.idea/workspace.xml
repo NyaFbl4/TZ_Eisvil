@@ -11,7 +11,6 @@
     <changedPaths>
       <option value="$PROJECT_DIR$/Assets/Project/Scripts/Game/Enemy/IEnemyController.cs" />
       <option value="$PROJECT_DIR$/Assets/Project/Scripts/Game/Enemy/EnemyType.cs" />
-      <option value="$PROJECT_DIR$/Assets/Project/Scripts/Game/Enemy/EnemyController.cs" />
       <option value="$PROJECT_DIR$/Assets/Project/Scripts/Installers/EnemyInstaller.cs" />
       <option value="$PROJECT_DIR$/Assets/Project/Scripts/Game/TransformsController.cs" />
       <option value="$PROJECT_DIR$/Assets/Project/Scripts/Game/Enemy/EnemySpawner.cs" />
@@ -25,6 +24,7 @@
       <option value="$PROJECT_DIR$/Assets/Project/Scripts/Game/Enemy/EnemyGlobalTracker.cs" />
       <option value="$PROJECT_DIR$/Assets/Project/Scripts/Game/TaskSystem/Tasks/KillEnemyTypeTask.cs" />
       <option value="$PROJECT_DIR$/Assets/Project/Scripts/Game/TaskSystem/TaskManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Project/Scripts/Game/Enemy/EnemyController.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="2x4rkxsozdCcfEbZNtuYGlv4qqn" />
@@ -49,6 +49,7 @@
       <updated>1747208340236</updated>
       <workItem from="1747208354314" duration="13404000" />
       <workItem from="1747289132131" duration="16711000" />
+      <workItem from="1747316507015" duration="328000" />
     </task>
     <servers />
   </component>
