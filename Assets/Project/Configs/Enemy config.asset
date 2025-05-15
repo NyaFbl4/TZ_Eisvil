@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0d0dcc20261471c9c400a0aec02e154, type: 3}
   m_Name: Enemy config
   m_EditorClassIdentifier: 
-  _prefab: {fileID: 0}
-  _initialCount: 0
+  _prefab: {fileID: 5739770990093373837, guid: c9ce7bc5c998d604f951017e9f36d64c, type: 3}
+  _initialCount: 45
+  _enemyTypeCounts: 15

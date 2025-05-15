@@ -27,8 +27,8 @@
       <option value="$PROJECT_DIR$/Assets/Project/Scripts/Game/Enemy/EnemyPool.cs" />
       <option value="$PROJECT_DIR$/Assets/Project/Scripts/Game/Enemy/EnemyConfig.cs" />
       <option value="$PROJECT_DIR$/Assets/Project/Scripts/Game/Enemy/EnemyGlobalTracker.cs" />
-      <option value="$PROJECT_DIR$/Assets/Project/Scripts/Installers/EnemyInstaller.cs" />
       <option value="$PROJECT_DIR$/Assets/Project/Scripts/Game/Enemy/EnemySpawner.cs" />
+      <option value="$PROJECT_DIR$/Assets/Project/Scripts/Installers/EnemyInstaller.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="2x4rkxsozdCcfEbZNtuYGlv4qqn" />
