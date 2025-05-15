@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\Public\Repos\!Testovoe\TZ_Eisvil" t="IncludeRecursive">
+    <e p="C:\Users\lomok\AppData\Local\JetBrains\Rider2020.3\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\lomok\AppData\Local\JetBrains\Rider2020.3\resharper-host\Local\Transient\Rider\v203\SolutionCaches\_TZ_Eisvil.-1460163600.00" t="ExcludeRecursive" />
+    <e p="D:\PROEKTbI\TZ_Eisvil" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Plugins" t="Include">
@@ -930,7 +932,10 @@
             <e p="Game" t="Include">
               <e p="Enemy" t="Include">
                 <e p="EEnemyType.cs" t="Include" />
+                <e p="EnemyConfig.cs" t="Include" />
+                <e p="EnemyContainer.cs" t="Include" />
                 <e p="EnemyController.cs" t="Include" />
+                <e p="EnemyFactory.cs" t="Include" />
                 <e p="EnemyGlobalTracker.cs" t="Include" />
                 <e p="EnemyPool.cs" t="Include" />
                 <e p="EnemySpawner.cs" t="Include" />
@@ -1040,7 +1045,5 @@
       <e p="Zenject-UnitTests-Editor.csproj" t="IncludeRecursive" />
       <e p="Zenject.csproj" t="IncludeRecursive" />
     </e>
-    <e p="C:\Users\Никита\AppData\Local\JetBrains\Rider2020.3\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\Никита\AppData\Local\JetBrains\Rider2020.3\resharper-host\Local\Transient\Rider\v203\SolutionCaches\_TZ_Eisvil.193034525.00" t="ExcludeRecursive" />
   </component>
 </project>

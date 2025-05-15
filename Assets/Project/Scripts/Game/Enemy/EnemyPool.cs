@@ -3,17 +3,28 @@ using UnityEngine;
 
 namespace TZ_Eisvil
 {
-    public class EnemyPool : MonoBehaviour
+    public class EnemyPool
     {
-        [SerializeField] private EnemyController _prefabEnemy;
-        [SerializeField] private Transform _parent;
-        [SerializeField] private int _countEnemy;
+        private EnemyController _prefabEnemy;
+        private Transform _parent;
+        private int _countEnemy;
+        private EnemyFactory _enemyFactory;
 
         private Queue<EnemyController> _enemyPool = new();
 
+        public EnemyPool(EnemyController prefabEnemy, Transform parent, int countEnemy, EnemyFactory enemyFactory)
+        {
+            _prefabEnemy = prefabEnemy;
+            _parent = parent;
+            _countEnemy = countEnemy;
+            _enemyFactory = enemyFactory;
+
+            Init(_countEnemy);
+        }
+
         private void Start()
         {
-            Init(_countEnemy);
+            //Init(_countEnemy);
         }
         
         public void Init(int initialSize)
@@ -24,6 +35,7 @@ namespace TZ_Eisvil
             }
         }
 
+        
         public EnemyController GetEnemy()
         {
             if (_enemyPool.Count == 0)
@@ -40,12 +52,14 @@ namespace TZ_Eisvil
             _enemyPool.Enqueue(enemy);
         }
         
+        
         private EnemyController CreateNewEnemy()
         {
-            var enemy = Instantiate(_prefabEnemy, 
-                Vector3.zero, Quaternion.identity, _parent);
+            //var enemy = Instantiate(_prefabEnemy, Vector3.zero, Quaternion.identity, _parent);
+            var enemy = _enemyFactory.Create();
 
             return enemy;
         }
+        
     }
 }

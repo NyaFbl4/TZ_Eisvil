@@ -22,10 +22,11 @@ namespace TZ_Eisvil
         private List<IEnemyController> _activeEnemyPool;
 
         [Inject]
-        public void Construct(EnemyGlobalTracker globalTracker)
+        public void Construct(EnemyGlobalTracker globalTracker, EnemyPool enemyPool)
         {
             _camera = Camera.main;
             _globalTracker = globalTracker;
+            _enemyPool = enemyPool;
 
             foreach (EEnemyType type in Enum.GetValues(typeof(EEnemyType)))
             {
