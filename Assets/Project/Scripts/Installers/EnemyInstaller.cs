@@ -1,7 +1,6 @@
-﻿using TZ_Eisvil;
-using Zenject;
+﻿using Zenject;
 
-namespace Assets.Project.Scripts.Installers
+namespace TZ_Eisvil
 {
     public class EnemyInstaller : MonoInstaller
     {

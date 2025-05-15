@@ -7,12 +7,13 @@ namespace TZ_Eisvil
     {
         [SerializeField] private EnemyController _prefabEnemy;
         [SerializeField] private Transform _parent;
+        [SerializeField] private int _countEnemy;
 
         private Queue<EnemyController> _enemyPool = new();
 
         private void Start()
         {
-            Init(20);
+            Init(_countEnemy);
         }
         
         public void Init(int initialSize)

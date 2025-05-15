@@ -8,12 +8,14 @@ namespace TZ_Eisvil
 {
     public class EnemySpawner: MonoBehaviour
     {
-        private EnemyGlobalTracker _globalTracker;
         [SerializeField] private EnemyPool _enemyPool;
         [SerializeField] private Transform _worldTransform;
-        [SerializeField] private List<Color> _colors;
+
+        [SerializeField] private int _enemyTypeCounts;
+
+        private EnemyGlobalTracker _globalTracker;
         
-        [SerializeField] private Camera _camera;
+        private Camera _camera;
         private float _minBorderOffset = 0f;
         private float _maxBorderOffset = 0f;
 
@@ -22,25 +24,26 @@ namespace TZ_Eisvil
         [Inject]
         public void Construct(EnemyGlobalTracker globalTracker)
         {
+            _camera = Camera.main;
             _globalTracker = globalTracker;
-        }
-        
-        private void Update()
-        {
-            if (Input.GetKeyDown(KeyCode.Space))
+
+            foreach (EEnemyType type in Enum.GetValues(typeof(EEnemyType)))
             {
-                SpawnEnemy();
+                for (int i = 0; i < _enemyTypeCounts; i++)
+                {
+                    SpawnEnemy(type);
+                }
             }
         }
 
-        private void SpawnEnemy()
+        private void SpawnEnemy(EEnemyType enemyType)
         {
             var enemy = _enemyPool.GetEnemy();
             
             enemy.transform.parent = _worldTransform.parent;
             enemy.transform.position = GetRandomPositionInViewport();
 
-            enemy.Init(GetRandomEnemyType());
+            enemy.Init(enemyType);
             _globalTracker.RegisterEnemy(enemy);
         }
 

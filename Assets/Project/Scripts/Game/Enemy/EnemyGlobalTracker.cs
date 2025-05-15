@@ -11,12 +11,9 @@ namespace TZ_Eisvil
 
         public EnemyGlobalTracker()
         {
-            Debug.Log("Create EnemyGlobalTracker");
         }
 
         public event Action<EnemyController> OnDeathEnemy;
-        
-        
         
         public void RegisterEnemy(EnemyController enemy)
         { 
@@ -26,16 +23,13 @@ namespace TZ_Eisvil
         
         private void HandleDeath(EnemyController enemy)
         {
-            // Обновляем статистику
             var type = enemy.EnemyType;
             Debug.Log("Death enemy " + type.ToString());
             _deathStats[type] = _deathStats.TryGetValue(type, out var count) ? count + 1 : 1;
-        
-            // Чистим ссылки
+
             _activeEnemyPool.Remove(enemy);
             enemy.OnDeath -= HandleDeath;
-        
-            // Уведомляем подписчиков
+            
             OnDeathEnemy?.Invoke(enemy);
         }
     }
