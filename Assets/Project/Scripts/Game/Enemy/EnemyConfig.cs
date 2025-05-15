@@ -7,9 +7,10 @@ namespace TZ_Eisvil
     {
         [SerializeField] private EnemyController _prefab;
         [SerializeField] private int _initialCount;
+        [SerializeField] private int _enemyTypeCounts;
         
         public EnemyController EnemyPrefab => _prefab;
         public int InitialCount => _initialCount;
-
+        public int EnemyTypeCounts => _enemyTypeCounts;
     }
 }

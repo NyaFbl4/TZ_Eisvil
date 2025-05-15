@@ -6,28 +6,34 @@ using Random = UnityEngine.Random;
 
 namespace TZ_Eisvil
 {
-    public class EnemySpawner: MonoBehaviour
+    public class EnemySpawner
     {
-        [SerializeField] private EnemyPool _enemyPool;
-        [SerializeField] private Transform _worldTransform;
+        private readonly EnemyPool _enemyPool;
+        private readonly Transform _worldTransform;
 
-        [SerializeField] private int _enemyTypeCounts;
+        private readonly int _enemyTypeCounts;
 
-        private EnemyGlobalTracker _globalTracker;
+        private readonly EnemyGlobalTracker _globalTracker;
         
-        private Camera _camera;
-        private float _minBorderOffset = 0f;
-        private float _maxBorderOffset = 0f;
+        private readonly Camera _camera;
+        private readonly float _minBorderOffset = 0f;
+        private readonly float _maxBorderOffset = 0f;
 
-        private List<IEnemyController> _activeEnemyPool;
-
-        [Inject]
-        public void Construct(EnemyGlobalTracker globalTracker, EnemyPool enemyPool)
+        private readonly List<IEnemyController> _activeEnemyPool;
+        
+        public EnemySpawner(EnemyGlobalTracker globalTracker, EnemyPool enemyPool, 
+            Transform worldTransform, int EnemyTypeCounts)
         {
+            Debug.Log("EnemySpawner");
+            
             _camera = Camera.main;
             _globalTracker = globalTracker;
             _enemyPool = enemyPool;
+            _worldTransform = worldTransform;
+            _enemyTypeCounts = EnemyTypeCounts;
 
+            Debug.Log(_enemyTypeCounts);
+            
             foreach (EEnemyType type in Enum.GetValues(typeof(EEnemyType)))
             {
                 for (int i = 0; i < _enemyTypeCounts; i++)
@@ -39,6 +45,7 @@ namespace TZ_Eisvil
 
         private void SpawnEnemy(EEnemyType enemyType)
         {
+            Debug.Log("SpawnEnemy");
             var enemy = _enemyPool.GetEnemy();
             
             enemy.transform.parent = _worldTransform.parent;

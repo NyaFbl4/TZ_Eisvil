@@ -18,16 +18,16 @@
       <option value="$PROJECT_DIR$/Assets/Project/Scripts/Game/TaskSystem/Tasks/KillEnemiesTask.cs" />
       <option value="$PROJECT_DIR$/Assets/Project/Scripts/Game/TaskSystem/Tasks/SurvivalTask.cs" />
       <option value="$PROJECT_DIR$/Assets/Project/Scripts/Game/TaskSystem/TaskView.cs" />
-      <option value="$PROJECT_DIR$/Assets/Project/Scripts/Game/Enemy/EnemyGlobalTracker.cs" />
       <option value="$PROJECT_DIR$/Assets/Project/Scripts/Game/TaskSystem/Tasks/KillEnemyTypeTask.cs" />
       <option value="$PROJECT_DIR$/Assets/Project/Scripts/Game/TaskSystem/TaskManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Project/Scripts/Game/Enemy/EnemyController.cs" />
       <option value="$PROJECT_DIR$/Assets/Project/Scripts/Game/Enemy/EnemyContainer.cs" />
-      <option value="$PROJECT_DIR$/Assets/Project/Scripts/Game/Enemy/EnemyConfig.cs" />
       <option value="$PROJECT_DIR$/Assets/Project/Scripts/Game/Enemy/NewEnemySpawner.cs" />
-      <option value="$PROJECT_DIR$/Assets/Project/Scripts/Installers/EnemyInstaller.cs" />
       <option value="$PROJECT_DIR$/Assets/Project/Scripts/Game/Enemy/EnemyFactory.cs" />
       <option value="$PROJECT_DIR$/Assets/Project/Scripts/Game/Enemy/EnemyPool.cs" />
+      <option value="$PROJECT_DIR$/Assets/Project/Scripts/Game/Enemy/EnemyConfig.cs" />
+      <option value="$PROJECT_DIR$/Assets/Project/Scripts/Game/Enemy/EnemyGlobalTracker.cs" />
+      <option value="$PROJECT_DIR$/Assets/Project/Scripts/Installers/EnemyInstaller.cs" />
       <option value="$PROJECT_DIR$/Assets/Project/Scripts/Game/Enemy/EnemySpawner.cs" />
     </changedPaths>
   </component>

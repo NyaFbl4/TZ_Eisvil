@@ -11,6 +11,7 @@ namespace TZ_Eisvil
 
         public EnemyGlobalTracker()
         {
+            Debug.Log("EnemyGlobalTracker");
         }
 
         public event Action<EnemyController> OnDeathEnemy;
